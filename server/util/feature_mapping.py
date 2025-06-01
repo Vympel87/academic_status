@@ -23,7 +23,7 @@ feature_mapping = {
             "Short cycle diploma holders": 53,
             "Change of institution/course (International)": 57
         },
-        "Daytime/evening attendance\t": {
+        "Daytime/evening attendance": {
             "daytime": 1, "evening": 0
         },
         "Previous qualification": {

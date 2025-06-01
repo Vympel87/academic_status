@@ -1,11 +1,22 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import Any
 
 # Request Schema
 class ClassificationRequest(BaseModel):
-    name: str
     gpa: float
-    attendance: float
+    marital_status: str = Field(..., alias="Marital status")
+    application_mode: str = Field(..., alias="Application mode")
+    daytime_evening_attendance: str = Field(..., alias="Daytime/evening attendance")
+    previous_qualification: str = Field(..., alias="Previous qualification")
+    mothers_qualification: str = Field(..., alias="Mother's qualification")
+    fathers_qualification: str = Field(..., alias="Father's qualification")
+    mothers_occupation: str = Field(..., alias="Mother's occupation")
+    fathers_occupation: str = Field(..., alias="Father's occupation")
+    displaced: str = Field(..., alias="Displaced")
+    debtor: str = Field(..., alias="Debtor")
+    tuition_fees_up_to_date: str = Field(..., alias="Tuition fees up to date")
+    gender: str = Field(..., alias="Gender")
+    scholarship_holder: str = Field(..., alias="Scholarship holder")
 
 # Response Data Schema (isinya bagian "data" dari success response)
 class ClassificationData(BaseModel):
