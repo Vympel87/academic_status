@@ -6,10 +6,10 @@ from components.result_display import display_result
 from api import predict_status
 
 def main():
-    st.set_page_config(page_title="Dashboard Status Akademik", layout="centered")
+    st.set_page_config(page_title="Dashboard Academic Status", layout="centered")
 
-    st.title("📊 Dashboard Klasifikasi Status Akademik")
-    st.markdown("Masukkan data mahasiswa untuk memprediksi status akademik berdasarkan nilai dan kehadiran.")
+    st.title("📊 Classification Academic Status in Portugal")
+    st.markdown("In this application, you can predict the academic status of students based on various features. Fill in the form below to get started.")
 
     submit, input_data = input_form()
 
