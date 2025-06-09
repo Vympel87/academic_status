@@ -2,7 +2,8 @@
 
 import requests
 
-CLASSIFY_API_URL = "http://127.0.0.1:8000/api/ml/classify"
+# CLASSIFY_API_URL = "http://127.0.0.1:8000/api/ml/classify"
+CLASSIFY_API_URL = "https://academicstatus-production.up.railway.app/api/ml/classify"
 
 def predict_status(input_data: dict):
     try:
